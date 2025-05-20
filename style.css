@@ -39,17 +39,17 @@ nav a:hover {
   font-size: 2em;
 }
 
-.about, .projects, .contact, .current-project {
+.about, .work-experience, .contact, .current-project {
   padding: 40px 20px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.about, .projects, .current-project {
+.about, .work-experience, .current-project {
   border-bottom: 1px solid #444;
 }
 
-.projects h2,
+.work-experience h2,
 .about h2,
 .contact h2,
 .current-project h2 {
@@ -57,13 +57,13 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.project-grid {
+.work-experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.project-card {
+.work-experience-card {
   background: #292929;
   padding: 20px;
   border-radius: 10px;
@@ -71,16 +71,16 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+.work-experience-card:hover {
   transform: translateY(-5px);
 }
 
-.project-card h3 {
+.work-experience-card h3 {
   margin-top: 0;
   color: #fff;
 }
 
-.project-card span {
+.work-experience-card span {
   font-size: 0.85em;
   color: #ccc;
 }
@@ -133,4 +133,13 @@ footer {
   background: #121212;
   color: #666;
   font-size: 0.9em;
+}
+
+.contact-link {
+  color: #90ee90;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
 }
