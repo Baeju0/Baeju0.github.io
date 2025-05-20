@@ -105,13 +105,28 @@ nav a:hover {
   background-color: #76c876;
 }
 
-.hero .button-link,
-.current-project .button-link {
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* 버튼 사이 간격 */
+  margin-top: 10px; /* 버튼 컨테이너 상단 여백 */
+}
+
+.hero .button-link {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Specific styles for buttons in current-project */
+.current-project .button-link {
+  width: -moz-fit-content; /* Retain this */
+  width: fit-content;     /* Retain this */
+  /* display: inline-block; will be inherited from .button-link */
+  /* No margin-left/right: auto, as they are flex items handled by button-container */
 }
 
 footer {
