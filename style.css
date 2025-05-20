@@ -105,14 +105,27 @@ nav a:hover {
   background-color: #76c876;
 }
 
-.hero .button-link,
-.current-project .button-link {
-  display: block;
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.hero .button-link {
+ display: block;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
+
+.current-project .button-link {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 
 footer {
   text-align: center;
