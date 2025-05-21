@@ -1,81 +1,81 @@
-import icon from "/icons-github.png";
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>주영의 포트폴리오</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>프론트엔드 개발자 배주영 | 포트폴리오</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Juyoung's Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#current-project">Current Project</a>
-      <a href="#work-experience">Work Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
+<header>
+    <div class="container">
+        <h1>프론트엔드 개발자 배주영</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="hero" class="hero">
     <h2>프론트엔드 개발자 배주영입니다.</h2>
-    <p>React, TypeScript를 사용해 사용자 중심의 웹을 만듭니다.</p>
-  </section>
+    <p>React, TypeScript로 감정 건강 일기(맘몸일기) 웹앱 개발 중이며,</p>
+    <p>사용자 중심의 UI/UX 설계 및 구현에 집중하고 있습니다.</p>
+</section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>안녕하세요. 프론트엔드 개발자 배주영입니다!</p>
-    <p>React 및 TypeScript 기반으로 사용자 중심 웹을 개발하며,</p>
-    <p>최근에는 '맘몸일기' 프로젝트를 통해 감정과 건강을 기록, 분석하는 일기 플랫폼을 개발 중입니다.</p>
-    <p>그 외, 쿠폰 기능 개발, 가상자산 결제 시스템, SEO 개선 등 다양한 프로젝트 경험을 바탕으로</p>
-    <p>끊임없이 성장하며 더 나은 사용자 경험을 위한 프론트엔드 개발자가 되고자 합니다!</p>
-  </section>
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <h3>Front-end</h3>
+    <ul class="skill-list">
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Vite</li>
+        <li>Zustand</li>
+    </ul>
 
-  <section id="current-project" class="current-project">
-    <h2>Current Project</h2>
-    <p>감정과 신체 상태를 기록·분석해 시각화하는 마음 관리 서비스입니다.</p>
-    <div class="button-container">
-      <a href="https://www.notion.so/1cfffc391b1d80bcbd3adfe86f3392e3?pvs=4" class="button-link">기획 보기</a>
-      <a href="https://mammom.pages.dev" target="_blank" class="button-link">서비스 바로가기</a>
+    <h3>UI & Styling</h3>
+    <ul class="skill-list">
+        <li>Tailwind CSS</li>
+        <li>lucide-react</li>
+        <li>Recharts</li>
+        <li>react-day-picker</li>
+    </ul>
+
+    <h3>Design & VCS</h3>
+    <ul class="skill-list">
+        <li>Figma</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+
+
+<section id="projects" class="projects">
+    <h2>주요 프로젝트</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>맘몸일기</h3>
+            <p>2025.04 ~</p>
+            <p>감정 및 건강 기록 웹앱 (1인 개발)</p>
+            <p>- 현재 개발 중 / 기획부터 개발까지 전반 구현 </p>
+            <a href="https://mammom.pages.dev" target="_blank" class="btn">맘몸일기 바로가기</a>
+            <a href="https://github.com/Baeju0/mammom.git" target="_blank" class="btn">맘몸일기 Github</a>
+            <a href="https://superb-wind-615.notion.site/1cfffc391b1d80bcbd3adfe86f3392e3?pvs=4" target="_blank" class="btn">기획부터 개발까지</a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="work-experience" class="work-experience">
-    <h2>Work Experience</h2>
-    <div class="work-experience-grid">
-      <div class="work-experience-card">
-        <h3>쿠폰 기능 개발</h3>
-        <p>쿠폰 프로세스 분석을 통한 기능 개발로 50명 사용자 유입</p>
-        <span>#React #Redux</span>
-      </div>
-      <div class="work-experience-card">
-        <h3>가상자산 결제 기능 개발</h3>
-        <p>가상 자산 결제 기능을 안정적으로 탑재, 결제 수단 확장</p>
-        <span>#React #TypeScript</span>
-      </div>
-      <div class="work-experience-card">
-        <h3>SEO 개선</h3>
-        <p>Next.js 기반 SEO 전략 적용 및 검색 노출 최적화</p>
-        <span>#Next.js #SEO</span>
-      </div>
-      <div class="work-experience-card">
-        <h3>IA 및 스토리보드 작성</h3>
-        <p>IA 및 스토리보드 작성으로 복잡한 화면 전환 문제와 UX 리스크를 명확히 시각화</p>
-        <span>#Figma #UX</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
+<section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: young93745@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/baeju0" target="_blank" class="contact-link"><img src="icons-github.png" alt="GitHub Icon" style="width: 30px; height: 30px; vertical-align: middle;"> Baeju0</a></p>
-  </section>
+    <p>Email: young92745@naver.com</p>
+        <a href="https://github.com/baeju0" target="_blank" class="contact-link"><img src="github64.png" alt="GitHub Icon" style="width: 30px; height: 30px; vertical-align: middle;"> Baeju0</a>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Juyoung. All rights reserved.</p>
-  </footer>
+<footer>
+    <p>&copy; 2025 배주영. All rights reserved.</p>
+</footer>
 </body>
 </html>
