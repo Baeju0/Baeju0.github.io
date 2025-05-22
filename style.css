@@ -197,3 +197,7 @@ footer {
         padding: 20px 10px;
     }
 }
+
+p {
+    white-space: nowrap;
+}
