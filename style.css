@@ -83,6 +83,7 @@ nav a.active::after {
 .hero p {
     max-width: 600px;
     margin: 0 auto var(--spacing-sm);
+    white-space: nowrap;
 }
 
 .skills {
@@ -196,8 +197,16 @@ footer {
     .hero, .skills, .projects, .contact {
         padding: 20px 10px;
     }
-}
-
-p {
-    white-space: nowrap;
+    .hero h2 {
+        font-size: 1.2em;
+        word-break: keep-all;
+    }
+    .hero p {
+        font-size: 0.95em;
+        max-width: 100%;
+        margin: 0 0 10px 0;
+        word-break: break-all;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
 }
